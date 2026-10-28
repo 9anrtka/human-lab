@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- META -->
+<meta charset="utf-8">
+<meta name="Generator" content="XpressEngine">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- TITLE -->
+<title>MAIN</title>
+<!-- CSS -->
+<link rel="stylesheet" href="common/css/xe.css@20201106145624.css" />
+<link rel="stylesheet" href="common/js/plugins/ui/jquery-ui.min.css@20201106145628.css" />
+<link rel="stylesheet" href="modules/editor/styles/ckeditor_light/style.css@20201106145620.css" />
+<link rel="stylesheet" href="widgets/counter_status/skins/default/css/widget.css@20201106145628.css" />
+<link rel="stylesheet" href="widgets/jcontent/skins/default/css/widget.css@20161019102100.css" />
+<!-- JS -->
+<script>
+var current_url = "https://human.kaist.ac.kr/?mid=main";
+var request_uri = "https://human.kaist.ac.kr/";
+var current_mid = "main";
+var waiting_message = "서버에 요청 중입니다. 잠시만 기다려주세요.";
+var ssl_actions = new Array();
+var default_url = "https://human.kaist.ac.kr/";
+var http_port = 80;var enforce_ssl = true;</script>
+<!--[if lt IE 9]><script src="/common/js/jquery-1.x.js?20201106145624"></script>
+<![endif]--><!--[if gte IE 9]><!--><script src="common/js/jquery.js@20201106145624"></script>
+<!--<![endif]--><script src="common/js/modernizr.js@20201106145624"></script>
+<script src="common/js/x.js@20201106145625"></script>
+<script src="common/js/URI.js@20201106145624"></script>
+<script src="common/js/blankshield.min.js@20201106145625"></script>
+<script src="common/js/common.js@20201106145625"></script>
+<script src="common/js/js_app.js@20201106145628"></script>
+<script src="common/js/xml2json.js@20201106145624"></script>
+<script src="common/js/xml_handler.js@20201106145624"></script>
+<script src="common/js/xml_js_filter.js@20201106145625"></script>
+<!--[if lt IE 9]><script src="/common/js/respond.min.js?20201106145624"></script>
+<![endif]--><script src="widgets/jcontent/skins/default/js/content_widget.js@20161019102100"></script>
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="Site RSS" href="rss" /><link rel="alternate" type="application/atom+xml" title="Site Atom" href="atom" /><!-- ICON -->
+
+<script>
+						if(!captchaTargetAct) {var captchaTargetAct = [];}
+						captchaTargetAct.push("procBoardInsertDocument","procBoardInsertComment","procIssuetrackerInsertIssue","procIssuetrackerInsertHistory","procTextyleInsertComment");
+						</script>
+<script>
+						if(!captchaTargetAct) {var captchaTargetAct = [];}
+						captchaTargetAct.push("");
+						</script>
+
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://human.kaist.ac.kr/" />
+<meta property="og:title" content="MAIN" />
+<link rel="stylesheet" type="text/css" href="layouts/jit_layouts/css/common.css" />
+<link rel="stylesheet" type="text/css" href="layouts/jit_layouts/css/main_layout.css" /><script>
+//<![CDATA[
+xe.current_lang = "ko";
+xe.cmd_find = "찾기";
+xe.cmd_cancel = "취소";
+xe.cmd_confirm = "확인";
+xe.msg_no_root = "루트는 선택 할 수 없습니다.";
+xe.msg_no_shortcut = "바로가기는 선택 할 수 없습니다.";
+xe.msg_select_menu = "대상 메뉴 선택";
+//]]>
+</script>
+</head>
+<body>
+<!-- 
+작성날짜 : 2016-10-18
+관리 : 진인포텍
+-->
+ 
+<!-- css link -->
+
+
+<script src="layouts/jit_layouts/js/slides.min.jquery.js"></script>
+<script src="layouts/jit_layouts/js/slideshow_fade.js"></script>
+<script src="layouts/jit_layouts/js/javascript.js"></script>
+<script>
+// visual 
+	jQuery(function(){
+		jQuery('#slides').slides({
+			preload: true,
+			preloadImage: '',
+			play: 5000,
+			pause: 2500,
+			pauseOnHover: false,
+			hoverPause: true,
+			animationStart: function(current){
+				jQuery('.caption').animate({
+					bottom:-35
+				},100);
+				if (window.console && console.log) {
+					// visual return of current slide number
+					console.log('animationStart on slide: ', current);
+				};
+			},
+			animationComplete: function(current){
+				jQuery('.caption').animate({
+					bottom:0
+				},200);
+				if (window.console && console.log) {
+					// visual return of current slide number
+					console.log('animationComplete on slide: ', current);
+				};
+			},
+			slidesLoaded: function() {
+				jQuery('.caption').animate({
+					bottom:0
+				},150);
+			}
+		});
+		/// tabStyle
+		 jQuery(".tab_content").hide();
+			jQuery(".tab_content:first").show();
+			jQuery("ul.tabs li").click(function () {
+				jQuery("ul.tabs li").removeClass("active").css("color", "#373737");
+				
+				jQuery(this).addClass("active").css("color", "#fff");
+				jQuery(".tab_content").hide()
+				var activeTab = jQuery(this).attr("rel");
+				jQuery("#" + activeTab).fadeIn()
+		});
+	});
+</script>
+ 
+<ul id="skipNavi">
+	<li><a href="main.html#lnb">주메뉴 바로가기</a></li>
+	<li><a href="main.html#content">본문 바로가기</a></li>
+</ul>
+<div id="header">
+	<div class="content">
+		<h1 class="logo"><a href="index.html"><img src="layouts/jit_layouts/images/common/logo.jpg" alt=""/></a></h1>	
+		<div class="gnb">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+									<li><a href="index.php@mid=account&amp;act=dispMemberLoginForm.html"">LOGIN</a></li> 
+					<li><a href="index.php@mid=account&amp;act=dispMemberSignUpForm.html">JOIN</a></li>
+											</ul>
+			<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+    <dl class="widgetCounter">
+        <dt>오늘:</dt>
+        <dd>39</dd>
+        <dt>어제:</dt>
+        <dd>207</dd>
+        <dt>전체:</dt>
+        <dd>495,589</dd>
+    </dl>
+</div>
+</div></div>
+			<div style="display: inline;position: absolute;top: 34px;left: -140px;color: #fff;">Since 2016</div>
+		</div>	</div>
+	<!-- top menu (Start) -->
+			<div class="tm_box">
+		<div class="subBg"></div>
+		<ul id="tm">
+						<li ><a href="page_BLKq48.html">Lab Intro</a>
+				<ul class="submenu1">
+					<li  ><a href="page_BLKq48.html">Overview</a></li><li  ><a href="page_sAsP01.html">Research Topics (Video)</a></li><li  ><a href="page_haPX67.html">Research Topics (PDF)</a></li><li  ><a href="board_nSnD08.html">Lectures</a></li><li  ><a href="page_Ifzl21.html">Full CV</a></li><li  ><a href="sub01_02.html">Contact Us</a></li><li  ><a href="Gallery.html">Gallery</a></li>				</ul>
+			</li><li ><a href="sub02_01.html">Members</a>
+				<ul class="submenu2">
+					<li  ><a href="sub02_01.html">Professor</a></li><li  ><a href="sub02_05.html">Researcher</a></li><li  ><a href="sub02_02.html">Ph.D. Candidates</a></li><li  ><a href="sub02_03.html">Master Candidates</a></li><li  ><a href="sub02_04.html">Alumni</a></li><li  ><a href="sub02_06.html">Staff</a></li>				</ul>
+			</li><li ><a href="sub03_01.html">Research</a>
+				<ul class="submenu3">
+					<li  ><a href="page_dKMm77.html">Vibration Analysis &amp; Condition Monitoring</a></li><li  ><a href="sub03_05.html">Prognostics and Health Management</a></li><li  ><a href="sub03_02.html">Auditory Intelligence &amp; Acoustic Recognition</a></li><li  ><a href="sub03_03.html">Human Vibration &amp; Health Sensors</a></li><li  ><a href="sub03_01.html">3D Scene Recognition</a></li>				</ul>
+			</li><li ><a href="sub04_06.html">M.S. Thesis</a>
+				<ul class="submenu4">
+									</ul>
+			</li><li ><a href="sub04_07.html">Ph.D. Dissertation</a>
+				<ul class="submenu5">
+									</ul>
+			</li><li ><a href="sub04_01.html">Publications</a>
+				<ul class="submenu6">
+					<li  ><a href="sub04_01.html">International Journal</a></li><li  ><a href="sub04_02.html">International Conference</a></li><li  ><a href="sub04_03.html">Domestic Journal</a></li><li  ><a href="sub04_04.html">Domestic Conference</a></li><li  ><a href="sub04_09.html">Invited Journal Articles</a></li><li  ><a href="sub04_08.html">Patents</a></li>				</ul>
+			</li><li ><a href="board_MNUb09.html">Projects</a>
+				<ul class="submenu7">
+					<li  ><a href="board_MNUb09.html">Projects</a></li><li  ><a href="board_hNkr21.html">Consulting</a></li>				</ul>
+			</li><li ><a href="News.html">Awards</a>
+				<ul class="submenu8">
+					<li  ><a href="News.html">Awards</a></li><li  ><a href="Notice.html">Notice</a></li>				</ul>
+			</li>		</ul>
+		<script type="text/javascript">topMenu4();</script> <!-- 아무것도 선택되지 않았을때 topMenu1(); -->
+	</div>	<!-- top menu (End) -->
+</div>
+ 
+	<div class="visual">
+	<!-- visual (Start) -->
+	<div id="visual">
+		<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    		
+	<div id="slides">
+		<div class="slides_container">
+				<div class="slide">
+				<img src="files/thumbnails/969/003/984x353.crop.jpg@20231208130503" alt="">
+			</div>
+				<div class="slide">
+				<img src="files/thumbnails/966/003/984x353.crop.jpg@20231208130503" alt="">
+			</div>
+				<div class="slide">
+				<img src="files/thumbnails/964/003/984x353.crop.jpg@20231208130415" alt="">
+			</div>
+				<div class="slide">
+				<img src="files/thumbnails/656/003/984x353.crop.jpg@20231201145015" alt="">
+			</div>
+			</div>
+	</div>
+			
+					
+	
+	
+    </div>
+</div></div>
+	</div>
+	<!-- visual (End) -->
+</div>
+<div id="contents">
+	<div class="content">
+		
+		<div class="section1 col02">
+			<div class="notice_title">
+				<div class="ft_left">
+					<span class="small">Human Lab</span>
+					<span class="color01">N</span>EWS & 
+					<span class="color01">A</span>RTICLE
+				</div>
+				<div class="moreBtn"><a href="index.php@mid=News.html" class=""><img src="layouts/jit_layouts/images/main/moreBtn.jpg" alt=""/></a></div>
+			</div>
+			<div>
+				<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+		
+	<ul class="listBox">
+			
+										
+										
+										
+										
+									</ul>
+					
+	
+	
+    </div>
+</div></div>
+			</div>
+		</div>
+		<div class="section1 col02">
+			<div class="notice_title">
+				<div class="ft_left">
+					<span class="small">Human Lab</span>
+					<span class="color01">N</span>OTICE
+				</div>
+				<div class="moreBtn"><a href="index.php@mid=Notice.html" class=""><img src="layouts/jit_layouts/images/main/moreBtn.jpg" alt=""/></a></div>
+			</div>
+			<div>
+				<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+		
+	<ul class="listBox">
+			
+						<li><a href="6188.html">KAIST 기계공학과 휴먼랩 이노코어 포닥 모집 (인공지능 적...</a></li>
+			
+						<li><a href="2133.html">인간-기계 상호작용 연구실 (Human Lab) 소개 자료 2023</a></li>
+			
+						<li><a href="2091.html">Human Lab - Research Theme and Training Path 2023</a></li>
+		</ul>
+					
+	
+	
+    </div>
+</div></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="content clear">
+		<div class="section2">
+			<div class="_title02"><span class="color01">P</span>UBLICATION <span class="line"></span></div>
+			<!-- Tab menu (Start) -->
+			<ul class="tabs">
+				<li class="active" rel="tab1">International Journal</li>
+				<li rel="tab2">International Conference</li>
+				<li rel="tab3">Domestic Journal</li>
+				<li rel="tab4">Domestic Conference</li>
+				<li rel="tab5">Projects</li>
+				<li rel="tab6">Master Thesis</li>
+				<li rel="tab7">Ph.D. Dissertation</li>
+				<li rel="tab8">Patents</li>
+			</ul>
+			<div class="tab_container">
+				<div id="tab1" class="tab_content TabNoticeStyle">
+					<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+		
+	<ul>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">Junki Hong,  Bomi Lee, Adelle Ria Persad, Hyunwoo Song, Changhee Min,  Jae-Hak Jeong, Alireza Doostan, <u><strong>Yong-Hwa Park</strong></u> (2026). Computer Methods and Programs in Biomedicine, 280, 109311. <u><strong>(SCIE, IF 4.8)</strong></u></span></span></p></li>
+										<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">Jeongmin Kim, Jin Kim, Manhee Cho, Yeonghwan Kim, Bong-gook Kang, <u><strong>Yong-Hwa Park</strong></u> (2026). Three-dimensional measurement of ship blocks using a multi-vision system with weighted generic calibration, Ocean Engineering, 346, 123845, <strong>(SCIE, IF 5.5)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">K.C. Park, J.A. Gonzaelez, S.J. Shin, S.H. Kang, M.H. Hwang, J.G. Kim, M.F. Baqir, J.H. Hang, R.W. Hagos, S.C. Lee, <u><strong>Y.H. Park</strong></u>, H.J. Kim, K.K. Maute, C.A. Felippa (2026). Solving FEM models without assembly: Its promise and challenge, Computers Methods in Applied Mechanics and Engineering, 450, 118588. <strong>(SCIE, IF 7.8)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">Wonjun Yi, Wonho Jung, Hyeonuk Nam, Kangmin Jang, <u><strong>Yong-Hwa Park</strong></u> (2026). Multi-output classification using a cross-talk architecture for compound fault diagnosis of motors in partially labeled condition, Mechanical Systems and Signal Processing, 244, 113786. <strong>(SCIE, IF 8.9)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">Wonho Jung, Junho Kim, Kangmin Jang, Sung-Hyun Yun, Daeguen Lim, Minje Jin, <u><strong>Yong-Hwa Park</strong></u> (2025). Vibration, current, torque, RPM dataset for multiple fault conditions in industrial-scale electric motors under randomized speed and load variations, Data in Brief, 62, 111954. <strong>(SCIE, IF 1.4)</strong></span></span></p></li>
+																																																																																																																																																																																																																																																																																																																																							</ul>
+	
+	
+    </div>
+</div></div>
+				</div>
+				<!-- #tab1 -->
+				<div id="tab2" class="tab_content TabNoticeStyle">
+					<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+		
+	<ul>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Jung, Wonho, Kim, JunHo, Yang, Chanseung, Kim, Jaewan, &amp; <u><strong>Park, Yong-Hwa</strong></u>. (2025, October). Transfer Learning Based Motor Fault Diagnosis Using Motor Current Signals Robust to Speed, Load, and Capacity Variations, 51st Annual Conference of the IEEE Industrial Electronics Society (IECON), Madrid, Spain.</span></span><!-- notionvc: 4061b5fe-981a-4dbd-bdce-6001b06fdf70 --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Kim, HyeonJun, <u><strong>Park, Yong-Hwa</strong></u>, Park, Kwang-Chun, Jo, Sang-Soon (2025, September). A Model-Based Localized Damage Detection in Structural Health Monitoring. The 15th International Workshop on Structural Health Monitoring, Stanford University, CA, USA.</span></span><!-- notionvc: 86549c0b-634c-482a-8849-41cc87bf7b56 --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Persad, Adelle Ria, Lee, Bomi, Hong, Junki, Song, HyunWoo, Jeong, Jae-Hak, &amp; <u><strong>Park, Yong-Hwa</strong></u>. (2025, July). Parametric Study of Cardiovascular Parameter Influence on PPG-to-CBP Signal Conversion. 47th Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC), Copenhagen, Denmark.</span></span><!-- notionvc: ed5953a1-06df-424e-b01e-43e72fb09710 --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Lee, Bomi, Hong, Junki, Persad, Adelle Ria, Song, HyunWoo, Jeong, Jae-Hak, &amp; <u><strong>Park, Yong-Hwa</strong></u>. (2025, July). Systemic Analysis of Blood Pressure Waveform Features Using a Cardiovascular Simulator: Implications for Non-invasive Vascular Health Monitoring. 47th Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC), Copenhagen, Denmark.</span></span><!-- notionvc: c690b54b-d250-40f9-a505-e786181f5006 --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Hong, Junki, Lee, Bomi, Persad, Adelle Ria, Min, ChangHee, Jeong, Jae-Hak, &amp; <u><strong>Park, Yong-Hwa</strong></u>. (2025, July). Effect of Heart Rate on Arterial Pressure Wave Propagation: Analysis Using Cardiovascular Hardware Simulator. 47th Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC), Copenhagen, Denmark.</span></span><!-- notionvc: 065b5eaa-c91f-4971-830f-f17fa81a5c6e --></p></li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								</ul>
+	
+	
+    </div>
+</div></div>
+				</div>
+				<!-- #tab2 -->
+				<div id="tab3" class="tab_content TabNoticeStyle">
+					<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+		
+	<ul>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Junki Hong, Jae-Hak Jeong, Bomi Lee, Changhee Min, <u><strong>Yong-Hwa Park</strong></u>, &quot;Reproduction of Pressure Wave Propagation in the Abdominal Aorta using a Hemodynamic-based 1-D Flow Model,&quot; <em>Transactions of the Korean Society for Noise and Vibration Engineering (KSNVE), Vol. 34. No. 4, 2024.08, pp. 369-373</em></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Jae-Hak Jeong, <u><strong>Yong-Hwa Park</strong></u>, &quot;Reproducing Central-brachial Blood Pressure Waveforms using a Cardiovascular Simulator,&quot; <em>Transactions of the Korean Society for Noise and Vibration Engineering (KSNVE), Vol. 34, No. 3, 2024.06, pp. 295-301</em></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Jae-Hak Jeong, <u><strong>Yong-Hwa Park</strong></u>, &quot;Mock Circulatory Robot with Artificial Aorta for Reproduction of Blood Pressure Waveform,&quot; <em>The Journal of Korea Robotics Society, Vol. 19, No. 2, 2024.04, pp. 221-228</em></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Hong Junki, Jeong Jae-Hak, Lee Bomi, Changhee Min, <u><strong>Yong-Hwa Park</strong></u>, &quot;Estimation of Aortic Pressure Waveform via Dynamic System Modeling between Aortic Pressure and Cuff Oscillometric Signal,&quot; <em>Transactions of the Korean Society of Mechanical Engineers, A, Vol. 48, No. 4, 2024.04, pp. 285-288</em></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">Jae-Hak Jeong, Bomi Lee, Junki Hong, Changhee Min, <u><strong>Yong-Hwa Park</strong></u>, "A Cardiovascular Simulator for the Reproduction of Blood Pressure Waveform and Magnitude," </span></span><em><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">Journals of the Korean Society of Mechanical Engineers A, Vol. 47, No. 8, 2023, pp. 627-633</span></span></em></p></li>
+																																																																													</ul>
+	
+	
+    </div>
+</div></div>
+				</div>
+				<!-- #tab3 -->
+				<div id="tab4" class="tab_content TabNoticeStyle">
+					<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+		
+	<ul>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">김현준, 이원준, 장강민,&nbsp;<u><strong>박용화</strong></u>, &ldquo;C-GIS의 기계적 결함 진단을 위한 진동계측 및 진단 알고리즘 개발&rdquo;, 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.28</span></span><!-- notionvc: bdc1826d-1a85-4a0f-9a59-770f39e1ce91 --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><u><strong>박용화</strong></u>, 정원호, 임대근, 김진, 최승덕, &ldquo;비전/진동/음향 기반 멀티모달 상태진단 최신기술&rdquo;, 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.27</span></span><!-- notionvc: f4f37380-2dc2-420b-a889-4e74f9edf557 --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">장강민, 임대근, 김현준,&nbsp;<u><strong>박용화</strong></u>, &ldquo;물리정보 심층 연산자 네트워크를 이용한 구조물의 모드해석&rdquo;, 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.27</span></span><!-- notionvc: 9e91c473-37c7-4446-b0c4-c66213094946 --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">임대근, 정원호, 김준호,&nbsp;<u><strong>박용화</strong></u>, &ldquo;구조 동역학 시간 응답 예측을 위한 심층 연산자 신경망 기반 생성 모델&rdquo;, 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.27</span></span><!-- notionvc: c83d9194-8ff0-4de6-82f7-a8e6c924ea6e --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">송현우, 이보미, Persad Adelle Ria, 홍준기, 송유리, 정재학,&nbsp;<u><strong>박용화</strong></u>, &ldquo;맥파 전파 특성 기반 중심동맥압 추정 물리지식 네트워크&rdquo;, 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.26</span></span><!-- notionvc: a03d2241-18a9-45d6-a3eb-b01b44629c74 --></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">홍준기, 이보미, Persad Adelle Ria, 송현우, 송유리, 정재학, <u><strong>박용화</strong></u>, “혈류역학 모델의 실험적 검증과 압력 전파 분석”, 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.26</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><u><strong>박용화</strong></u>, &ldquo;진동해석과 생성형 AI 결합을 통한 원자력 구조물의 상태 진단&rdquo;, 2025년도 추계 소음진동 학술대회, 경주 라한셀렉트호텔, 2025.11.26</span></span><!-- notionvc: 7e5dd77f-4bc8-4728-9163-78cceaf2ce80 --></p></li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									</ul>
+	
+	
+    </div>
+</div></div>
+				</div>
+				<!-- #tab4 -->
+				<div id="tab5" class="tab_content TabNoticeStyle">
+					<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+		
+	<ul>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>&quot;인공지능 기반 타이어 건전성 모니터링 기술 개발&quot;</strong>, 한국타이어앤테크놀로지㈜, 2026.01-2026.12; <strong>(연구비 : 1.1 억원)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>&quot;AI 기반 지능형 설계-제조 통합 연구단&quot;</strong>, 한국과학기술원, 2026.01-2026.12; <strong>(연구비 : 0.7 억원)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>&quot;삼성전자 DS부문 전략 산학 과제 4기&quot;</strong>, 삼성전자㈜, 2025.10-2026.09; <strong>(연구비 : 0.7 억원)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>&quot;컴프레서 소음의 청각심리학적 분석 및 레벨 정량화 신규 체계 개발&quot;</strong>, LG전자㈜, 2025.05-2026.09; <strong>(연구비 : 0.9 억원)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>&quot;냉장고 설치 공간 스캐닝 Kit 개발&quot;</strong>, LG전자㈜, 2025.05-2026.04; <strong>(연구비 : 1.1 억원)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>&quot;가상환자시스템과 물리기반 AI를 이용한 비침습적 심혈관 건강 상태 모니터링 핵심 기술 개발&quot;</strong>, 한국연구재단, 2025.05-2026.04; <strong>(연구비 : 2.4 억원)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>&quot;초격차조선산업전문인력양성&quot;</strong>, 한국생산성본부 산업통상자원부, 2025.03-2026.02; <strong>(연구비 : 4.4 억원)</strong></span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>&quot;스마트야드 전문인력양성사업(2025년도)&quot;</strong>, 한국산업기술진흥원 과학기술정보통신부, 2025.03-2026.02; <strong>(연구비 : 5.2 억원)</strong></span></span></p></li>
+																																																																																																																																																																																																																																																																																																																																																																																				</ul>
+	
+	
+    </div>
+</div></div>
+				</div>
+				<!-- #tab5 -->
+				<div id="tab6" class="tab_content TabNoticeStyle">
+					<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+		
+	<ul>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">물리 지식 기반 심층 연산자 신경망을 이용한 다양한 구조변수에 대한 구조물의 모드 해석(PI-Deep Operator Network based Structural Modal Analysis for Various Structural Parameters), 장강민(2026)</span></span></p></li>
+										<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">광각 카메라-프로젝터 시스템의 정밀 3D 계측을 위한 Generic 캘리브레이션(Generic calibration of wide-FOV camera-projector system for precision 3D measurement), 조만희(2026)</span></span></p></li>
+										<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">모듈화된 맥파 전달 특성을 이용한 물리지식기반 PPG-중심동맥압 추정 네트워크(Physics-Informed PPG-to-Central Blood Pressure Estimation Network Using Modular Blood Pressure Transmission Characteristics), 송현우(2026)</span></span></p></li>
+										<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">디퓨전 모델을 이용한 간접 ToF 센서 깊이 이미지의 외광 노이즈 제거(Ambient Light Noise Suppression in Depth Image of Indirect Time-of-Flight Sensors Using a Diffusion Model), 안석준(2025)</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">빔포밍 어레이를 이용해 학습된 영상 기반 음원 위치 및 강도 맵 추정 방법(Image-based Sound Source Localization and Intensity Map Estimation Method Trained Using a Beamforming Array), 김진(2025)</span></span></p></li>
+																																																																																																																																				</ul>
+	
+	
+    </div>
+</div></div>
+				</div>
+				<!-- #tab6 -->
+				<div id="tab7" class="tab_content TabNoticeStyle">
+					<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+		
+	<ul>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">PPG신호 기반 혈관 건강 모니터링 방법 및 심혈관계 시뮬레이터와 전이학습을 이용한 임상 데이터 적용(PPG Signal-based Vascular Health Monitoring Method and Its Application to Clinical Data Using Cardiovascular Simulator and Transfer Learning), 이보미(2026)</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">스테레오 비전 기반 대규모 구조물의 3차원 고정밀 계측 방법에 관한 연구(High-precision 3D Measurement Method for Large-Scale Structures Based on Stereo Vision), 김정민(2026)</span></span></p></li>
+															<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">고정밀도 디지털 트윈 구현을 위한 센서 배치 및 자유도 확장 기법(Sensor Placement and DOF Expansion Methods for the Realization of a High-Precision DIgital Twin), 박강재(2025)</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">적합일반화분해 및 심층연산자신경망 기반 생성형 모델을 활용한 동적시스템의 상태 모니터링(Proper Generalized Decomposition and DeepONet-based Generative Model for Condition Monitoring of Dynamical Systems), 임대근(2025)</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;">음향 이벤트 검출을 위한 주파수 동적 컨볼루션(Frequency Dynamic Convolutions for Sound Event Detection), 남현욱(2025)</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">귀 이미지를 이용한 딥러닝 기반 머리전달함수 개인화 및 음원 방향 추정에 적용(DNN-based HRTF Individualization Utilizing Pinna Images for Accurate Sound Source Localization), 고병윤(2025)</span></span></p></li>
+																																																				</ul>
+	
+	
+    </div>
+</div></div>
+				</div>
+				<!-- #tab7 -->
+				<div id="tab8" class="tab_content TabNoticeStyle">
+					<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+		
+	<ul>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;"><u><strong>박용화</strong></u>, 정원호, 정성진, “게임데이터 학습 딥러닝 기반 소형 객체 탐지 방법 및 장치”, Pat.No. 10-2878352-0000 (2025.10.24), 대한민국</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;"><u><strong>박용화</strong></u>, 이경태, 남현욱, 김성후, 김영기, 김인권, 이광현, 이재선, 박성효, “Deep learning-based cough recognition method and device”, Pat.No.12156727 (2024.12.03), 미국</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;"><u><strong>박용화</strong></u>, “전차 동력 장치의 고장 진단 시스템, 방법 및 프로그램”, Pat.No. 10-2723564-0000 (2024.10.24), 대한민국</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;"><u><strong>박용화</strong></u>, 김성후, “시계열 데이터 적응형 컨볼루션 기반 딥러닝 모델을 이용한 화자 인식 방법”, Pat.No. 10-2709590-0000 (2024.09.20), 대한민국</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;"><u><strong>박용화</strong></u>, 박대희, Simeneh Semegne Gulat, “ELECTRONIC APPARATUS AND METHOD FOR IDENTIFYING FALSE DETECTION OF OBJECT BY REFLECTION IN INDOOR ENVIRONMENT”, Pat.No. 3772701 (2024.05.01), 유럽</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;"><u><strong>박용화</strong></u>, 남현욱, 김성후, 민덕기, 서호준, “다중채널 음향 및 진동신호 딥러닝 기반 전차 동력장치 고장진단체계”, Pat.No. 10-2647161-0000 (2024.03.08), 대한민국</span></span></p></li>
+					<li><p><span style="font-size:12px;"><span style="font-family:arial, helvetica, sans-serif;"><u><strong>박용화</strong></u>, 김준호, 정원호, 김재완, 양찬승, “전동기 상태 진단 방법 및 장치”, App.No. 10-2025-0147472 (2025.10.14), 대한민국</span></span></p></li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								</ul>
+	
+	
+    </div>
+</div></div>
+				</div>
+				<!-- #tab7 -->
+			 </div>
+		<!-- Tab menu (End) -->
+		</div>
+		<div class="section3">
+			<div class="titleBox">
+				<p class="small">Human-Machine Interaction Laboratory</p>
+				<p>Gallery</p>
+				<a href="index.php@mid=Gallery.html"><span class="morBtn">More View</span></a>
+			</div>
+			<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            	
+	    			
+					
+	
+	
+	<ul class="listBox2">
+				<li><a href="7477.html"><img src="files/thumbnails/477/007/244x176.crop.jpg@20260901223854" alt=""/><span class="_title">2026년 5월 16일 KAIST 기계...</span></a></li>
+				<li><a href="7409.html"><img src="files/thumbnails/409/007/244x176.crop.jpg@20260818152206" alt=""/><span class="_title">2026년 7월 IEEE EMBC2026</span></a></li>
+							</ul>
+	
+    </div>
+</div></div>
+		</div>
+		
+	</div>
+</div> 
+<div id="wrpar1">
+	<div class="bannerWrap">
+		<div class="banner">
+			<div class="_title03" style="">SITE LINK <img src="layouts/jit_layouts/images/main/moreBtn02.jpg" alt=""/></div>
+			<ul class="jinit_gallery listBox3">
+				<!-- <li><img src="https://human.kaist.ac.kr/layouts/jit_layouts/images/main/title05_1.gif" alt=""/></li> -->
+				<li><a href="https://kaist.ac.kr/kr/" target="_blank"><img src="layouts/jit_layouts/images/main/banner01.png" alt=""/></a></li>
+				<li><img src="layouts/jit_layouts/images/main/banner02.png" alt="" usemap="#banner02"/>
+					<map name="banner02">
+						<area shape="rect" coords="1,0,136,47" href="https://me.kaist.ac.kr/main/main.html" target="_blank" alt="" />
+						<area shape="rect" coords="138,1,221,54" href="https://kaist.ac.kr/kr/" target="_blank" alt="" />
+					</map>
+				</li>
+				<li><a href="https://novic.kaist.ac.kr/" target="_blank"><img src="layouts/jit_layouts/images/main/banner06.png" alt=""/></a></li>
+			</ul>			
+		</div>
+	</div>
+	<div id="container1">
+		<div id="footer">
+			<div><a href="index.html"><img src="layouts/jit_layouts/images/common/footlogo.png" alt=""/></a></div>
+			<div class="f_logo">(34141) KAIST, 291 Daehak-ro, Yuseong-gu, Daejeon, Republic of Korea Tel : 042-350-3235, e-mail: <a href="mailto:yhpark@kaist.ac.kr">yhpark@kaist.ac.kr</a><br/>
+			<span class="copyright">Copyright (c) 2016 HUMAN LAB All Rights Reserved.</span></div>
+		</div>
+	</div>	
+</div>
+<!-- ETC -->
+<div class="wfsr"></div>
+<script src="addons/captcha/captcha.js@20201106145629"></script><script src="common/js/plugins/ui/jquery-ui.min.js@20201106145628"></script><script src="common/js/plugins/ui/jquery.ui.datepicker-ko.js@20201106145628"></script><script src="addons/resize_image/js/resize_image.js@20201106145630"></script></body>
+</html>

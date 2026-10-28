@@ -1,0 +1,16 @@
+
+
+#wrpar1 {clear:both;background:#08112a;;}
+#container1 {background:#08112a;line-height:normal;width:100%;text-align:center;margin:0 auto;padding:10px 0; }
+#footer {display:inline-block;width:1000px;margin:0 auto;text-align:left;}
+	.banner {width:1000px;margin:0px auto;padding:10px 0;display:inline-block;}
+		.notice_title2 {vertical-align:middle;}
+	.banner .banner_line {vertical-align:middle;text-align:center;}
+	.banner .banner_line li {padding:0 5px;vertical-align:middle;text-align:center;}
+	.f_logo {width:100%;color:#97989e;padding:3px 0;}
+	.f_logo a{color:#97989e;}
+	.copyright {display:block;width:100%;color:#97989e;}
+
+	.bannerWrap {background:#fff;border-top:1px solid #ddd;display:inline-block;width:100%;text-align:center;}
+.banner .listBox3 {list-style:none;width:89%;overflow:hidden;float:right;text-align:center;}
+.banner .listBox3 li {float:left;display:inline-block;padding:0px 2px;;border:1px solid #ddd; margin:0 3px;text-align:center;}

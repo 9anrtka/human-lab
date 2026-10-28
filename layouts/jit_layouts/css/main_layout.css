@@ -1,0 +1,118 @@
+@carset "utf-8";
+@import 'footer.css';
+@import 'tab.css';
+
+.content {width:1000px;margin:0 auto;}
+body {line-height:0px;min-width:1000px;}
+
+#wrpar {width:100%;background:url(https://human.kaist.ac.kr/layouts/jit_layouts/images/main/main_bg.gif) repeat-x;min-width:1000px;}
+#container {width:1000px; margin:0 auto;}
+#header {display:inline-block;width:100%;padding-top:30px;background:#0579cd;}
+	.logo {clear:both;float:left;}
+	.gnb {position:relative;float:right;margin-right:10px;}
+	.gnb ul {list-style:none;display:inline-block;vertical-align:middle;}
+	.gnb li {float:left;padding:0px 5px;text-align:center;vertical-align:middle;line-height:20px;list-style:none;}
+	.gnb li a {color:#fff;}
+
+	/*.lnb {clear:both;height:83px;background:#ffccff;margin-top:45px;}
+	.lnb ul {width:100%;padding:10px;}
+	.lnb li {display:inline-block;padding:8px 40px;text-align:center;font-size:16px;font-weight:bold;}*/
+
+
+/* top_menu (start)*/
+	.tm_box {float:left;width:100%;text-align:center;margin-top:24px;position:relative;background:#fff;border-bottom:1px solid #d2d2d2;}
+	.tm_box #tm {width:1000px;margin:0 auto;}
+	.tm_box li {position:relative;padding:20px;display:inline-block;text-align:center;font-weight:bold;font-size:16px;line-height:normal;vertical-align:middle;;cursor: pointer;}
+	.tm_box li a {display:block;color:#424242;}
+	.tm_box li:hover a{;color:#0579cd;}
+	.tm_box > div.subBg {background:#f1f1f5;display:none;position:absolute;top:60px;width:100%;height:40px;z-index:3;border-bottom:2px solid #1852bc;}
+
+	.tm_box #tm li ul {width:1200px;margin:0px;padding:7px 0 0 0;line-height:50px;position:absolute;/*top:51px;*/display:none;text-align:left;vertical-align:middle;z-index:4;}
+	.tm_box #tm li ul li {height:20px;padding:5px 5px;display:inline-block;text-align:left;vertical-align:middle;color:#fff;font-size:12px;border:0px;opacity:1.0;background: none;}
+	.tm_box #tm li ul li a {color:#808080;padding:0 5px;display:inline-block;text-align:center;vertical-align:middle;opacity:1.0;}
+	.tm_box #tm li ul li a:hover {;color:#0579cd;font-weight:bold;padding:0 5px;display:inline-block;;}
+	.tm_box #tm li ul.submenu1 {}
+	.tm_box #tm li ul.submenu2 {}
+	.tm_box #tm li ul.submenu3 {}
+	.tm_box #tm li ul.submenu4 {left:-377px;}
+/* top_menu (end)*/
+
+
+	.visual {background:url(../images/main/visual_bg.jpg) repeat-x;;vertical-align:middle;padding:18px 0;vertical-align:middle;line-height:0px;}
+/* Slide (start) */
+		#visual {margin:0 auto;;width:1000px;height:369px;position:relative;}
+		#slides {width:100%;position:absolute;top:0px;left:0px;z-index:2;}
+
+		.slides_container {width:100%;height:369px;overflow:hidden;position:relative;display:block;}
+		.slides_container div.slide {display:block;padding:0px;border:8px solid #fff;}
+
+	/*      ̵    ư      css   ʿ   display:block ó    Ұ ! */
+		.pagination {height:16px;position:absolute;bottom:30px;right:60px;z-index:100;display:block;}
+		.pagination li {float:left;margin:0 5px 0 0;list-style:none;line-height:18px;}
+		.pagination li a {display:block;width:16px;height:0px;padding-top:16px;line-height:16px;border-radius:50px;background:#fff;;background-position:0 -16px;float:left;overflow:hidden;}
+		.pagination li.current a {background:#ffb400;;}
+/* Slide (end)*/
+
+
+
+#contents {padding:0px 0 0 0;}
+
+
+	.section1 {display:block;padding:25px 0 30px 0;}
+		a.notice_alink {display:inline-block;width:480px;float:left;margin:0 20px 20px 0;}
+		._line {height:1px;width:100%;background:#dedede url(https://human.kaist.ac.kr/layouts/jit_layouts/images/main/title_line.gif) no-repeat left bottom;display:block;margin-bottom:20px;}
+		.new_title {font-size:12px;color:#2353a5;font-weight:bold;line-height:20px;border-bottom:1px dotted #d5d5d5;margin-bottom:5px;}
+		.notice_conten {font-size:12px;color:#8a8a8a;line-height:20px;}
+		.jinit_data {color:#3e4146;font-size:12px;line-height:20px;}
+
+	.tab_box {height:305px;display:block;}
+		._line2 {width:100%;display:block;margin-bottom:20px;border-bottom:1px solid #e8e8e8;line-height:0px;margin-bottom:20px;}
+
+	.section2 {display:inline-block;width:100%;padding:25px 0 30px 0;}
+
+	.section2_01 {float:left; margin:0 41px 0 0;width:305px;height:185px;}
+
+	.section3 {display:inline-block;width:100%;padding-bottom:50px;;line-height:normal;} 
+			.jinit_gallery {display:inline-block;float:right;width:790px;margin:0 auto;}
+			.jinit_gallery li {float:left;text-align:center;padding:0 5px;}
+			.jinit_gallery li:last-child {margin-right:0px;}
+			.jinit_gallery li .jinit_img {display:block;}
+			.jinit_gallery li .g_title {color:#545454;line-height:normal;background:#f1f1f5;text-align:center;width:100%;display:block;padding:10px 0;}
+			.jinit_gallery li .g_data {color:#8a8a8a;display:none;}
+		.section3_02 {width:273px;height:240px;float:right;}
+
+
+/*  ߰   ۾  css */
+.col02 {width:48.5%;display:inline-block;float:left;line-height:normal;}
+.col02:last-child {float:right;text-align:left; }
+.notice_title {font-size:25px;color:#373737;font-weight:bold;display:inline-block;width:100%;border-bottom:1px solid #dbdbdb;padding:0px 0 5px 0;margin-bottom:10px;position:relative;}
+.notice_title .small {font-size:50%;font-weight:normal;line-height:normal;display:block;}
+.moreBtn {float:right;display:inline-block; position:absolute;;right:0px;top:35%;}
+.listBox {line-height:25px;list-style:none;padding:0 15px;font-weight:300;}
+.listBox li {padding:0 15px;background:url(../images/main/listBlt.png) no-repeat left center;}
+
+.listBox2 {display:inline-block;list-style:none;float:left;}
+.listBox2 li {display:inline-block;float:left;margin:0 5px;text-align:center;line-height:0px;}
+.listBox2 li span {display:block;}
+._title {background:#f1f1f5;line-height:normal;padding:15px 0;}
+
+.color01 {color:#0579cd;}
+
+._title02 {font-size:25px;line-height:30px;color:#373737;font-weight:bold;position: relative;padding: 0px 0 10px;}
+.line {display:inline-block;background:#dbdbdb;height:1px;width:82%;position:absolute;right:0px;top:40%;}
+
+.titleBox {width:160px;display:inline-block;background:#0579cd url(../images/main/photo_titlebg.jpg) no-repeat;min-height:166px;;float:left;color:#fff;padding:30px 20px;;position:relative;font-weight:bold;font-size:25px;text-transform:uppercase}
+.morBtn {background:#ffb400;color:#fff;padding:5px 15px;position:absolute;font-weight:normal;bottom:20px;font-size:12px;}
+.small {font-size:45%;font-weight:normal}
+
+.bannerWrap {background:#fff;border-top:1px solid #ddd;display:inline-block;width:100%;text-align:center;}
+.listBox3 {list-style:none;width:90%;overflow:hidden;float:right;text-align:center;}
+.listBox3 li {float:left;display:inline-block;padding:0 30px}
+
+._title03 {display:inline-block;float:left;line-height:25px;padding:10px 0;font-size:16px;font-weight:bold;color:#08112a;}
+._title03 img {vertical-align:middle;margin-top:-5px;}
+
+.TabNoticeStyle ul { float:left; margin:36px 0 0 0; padding:5px 0px 0px 0px;; list-style:none; display:none; width:100%;}
+.TabNoticeStyle ul .text {padding:0 5px 0 0;display:inline-block; color:#8a8a8a;}
+.TabNoticeStyle ul li { margin:0; padding:10px 0; color:#8a8a8a;list-style:none;border-bottom:1px dotted #dedede; text-align:left;line-height:25px;}
+.TabNoticeStyle ul li a {color:#8a8a8a;}

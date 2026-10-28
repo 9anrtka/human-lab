@@ -1,0 +1,98 @@
+	/* tab menu (start) */
+		/* 	#TabMenu {float:left; width:100%;position:relative;  height:300px;}
+		#TabMenu .TabNoticeStyle { width:100%; display:inline;height:300px; }
+
+		#TabMenu .TabNoticeStyle .TabNotice0 {position:absolute;left:0px;top:0px;}
+		#TabMenu .TabNoticeStyle .TabNotice1 {position:absolute;left:126px;top:0px;}
+		#TabMenu .TabNoticeStyle .TabNotice2 {position:absolute;left:252px;top:0px;}
+		#TabMenu .TabNoticeStyle .TabNotice3 {position:absolute;left:378px;top:0px;}
+		#TabMenu .TabNoticeStyle .TabNotice4 {position:absolute;left:504px;top:0px;}
+		#TabMenu .TabNoticeStyle .TabNotice5 {position:absolute;left:630px;top:0px;}
+		#TabMenu .TabNoticeStyle .TabNotice6 {position:absolute;left:756px;top:0px;}
+		#TabMenu .TabNoticeStyle .TabNotice7 {position:absolute;left:882px;top:0px;}
+		#TabMenu .TabMore {position:absolute;left:270px;top:7px;display:none;}
+
+		#TabMenu .TabNoticeStyle ul { float:left; margin:36px 0 0 0; padding:5px 0px 0px 0px;; list-style:none; display:none; width:100%;}
+		#TabMenu .TabNoticeStyle ul .text {padding:0 5px 0 0;display:inline-block; color:#8a8a8a;}
+		#TabMenu .TabNoticeStyle ul li { margin:0; padding:10px 0; color:#8a8a8a;list-style:none;border-bottom:1px dotted #dedede; text-align:left;background:url(../images/main/tab_blt.gif) no-repeat left 5px center;line-height:21px;}
+		#TabMenu .TabNoticeStyle ul li a {color:#8a8a8a;}
+tab menu (end) */
+
+
+
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    /*height: 32px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;*/
+    width: 100%;
+   /* font-family:"dotum";
+    font-size:12px;*/
+		display:table;
+}
+ul.tabs li {
+   /* float: left;*/
+    text-align:center;
+    cursor: pointer;
+    width:12.8%;
+    /* height: 31px;*/
+    line-height: normal;
+    /*border: 1px solid #eee;
+   border-left: none;*/
+    font-weight: bold;
+    background: #fafafa;
+    overflow: hidden;
+    position: relative;
+		padding: 5px 5px;
+    margin-left: 2px;
+		display:table-cell;
+		vertical-align:middle;
+		color:##373737;
+}
+ul.tabs li.active {
+    background: #FFFFFF url(../images/main/tab_bg.jpg) repeat-x left center;
+		color:#fff;
+    /*border-bottom: 1px solid #eee;*/
+}
+.tab_container {
+   /* border: 1px solid #eee;*/
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #FFFFFF;
+}
+.tab_content {
+    padding: 5px;
+    /*font-size: 12px;*/
+    display: none;
+		position:relative;
+}
+.tab_container .tab_content ul {
+    width:100%;
+    margin:0px;
+    padding:0px;
+		display:inline-block;
+		min-height:305px;
+}
+.tab_container .tab_content ul li {
+    position:relative;
+	padding:5px 5px 5px 13px;
+    list-style:none;
+}
+.tab_container .tab_content ul li:before{
+	content:url(../images/main/listBlt.png);
+	position:absolute;
+	left:0;
+}
+;
+ #container {
+    width: 249px;
+    margin: 0 auto;
+}
+
+
+.tab_content .moreBtn {float:right;display:inline-block;position:absolute;right:0px;top: -110px;}

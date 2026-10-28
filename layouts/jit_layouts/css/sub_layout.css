@@ -1,0 +1,133 @@
+@carset "utf-8";
+@import 'header.css';
+@import 'footer.css';
+
+
+.content {width:1000px;margin:0 auto;}
+.content2 {width:1000px;margin:0 auto;display:inline-block;border-left:1px solid #e9e9e9}
+body {line-height:0px;min-width:1000px;}
+
+.size_15 {font-size:15px;}
+.size_18 {font-size:18px;}
+
+._title03 {display:inline-block;float:left;line-height:25px;padding:10px 0;font-size:16px;font-weight:bold;color:#08112a;}
+._title03 img {vertical-align:middle;margin-top:-5px;}
+
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.boxShadow {-webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.03);-moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.03);box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.03);}
+.layoutDisplay {display:inline-block;width:100%;}
+
+.color00 {color:#000;}
+
+#contents {width:100%;display:inline-block;text-align:center;}
+	#seciton01 {display:inline-block;float:left;width:239px;min-height:200px;text-align:left;;}
+		.subTitle {line-height:30px;font-size:25px;color:#fff;padding:15px 25px;background: url(../images/sub/submenuBg.jpg) no-repeat left center;}
+		.left_submenu {line-height:25px;color:#444444;;padding-bottom:100px;list-style:none;font-size:16px;}
+		.left_submenu li {border-bottom:1px solid #e9e9e9;list-style:none;}
+		.left_submenu li a {display:block;padding:15px 20px;color:#444444;}
+		.left_submenu li:hover, .left_submenu li._on {color:#0579cd;background:#f8f8f8 url(../images/sub/leftmenuBlt.png) no-repeat right 10px center;}
+		.left_submenu li:hover a, .left_submenu li._on a {color:#0579cd;}
+
+	#section02 {display:inline-block;width:760px;padding-left:37px;padding-bottom: 50px;vertical-align:top;float:left;text-align:left;min-height:500px;border-left:1px solid #e9e9e9}
+		#content_haed {display:inline-block;padding:0px 0 20px;border-bottom:#d9d9d9 solid 1px;width:100%;line-height:normal;}
+			h4.content_title {display:inline-block;float:left;vertical-align:bottom;color:#252525;font-size:30px;padding:30px 0 0 0;}
+			#con_nav {line-height:25px;display:inline-block;text-align:center;padding:20px 5px 0 0px;float:right;}
+			#con_nav li {display:inline-block;float:left; vertical-align:middle;padding:5px 5px 0 0px;text-align:center;color:#7e7f7f;font-size:11px;}
+			#con_nav li:last-child {font-weight:bold;}
+
+	#content {padding:35px 0 70px 0;min-height:600px;}
+
+	.textBox {line-height:25px;font-weight:300;}
+	.title01 {border-top:1px solid #e0e0e0;color:#000;font-size:18px;font-weight:500;line-height:25px;padding:15px 0;position:relative;}
+	.title01:before {content:"";width:50px;height:5px;position:absolute;top:-3px;background:#004993;}
+
+	.title02 {display:inline-block;font-size:18px;color:#046db8;font-weight:500;}
+
+	.title03 {border-bottom:1px solid #e0e0e0;color:#000;font-size:18px;font-weight:500;line-height:25px;padding:15px 0;position:relative;}
+	.title03:before {content:"";width:50px;height:5px;position:absolute;bottom:-3px;background:#004993;}
+
+	.text02 {float:right;display:inline-block;border-bottom:1px solid #bcbcbc;padding:5px 0;}
+	.text02 li {padding:5px 0 5px 15px;border-bottom:1px dotted #a9a9a9; vertical-align:top;}
+	.text02 li strong {color:#000;font-weight:bold;}
+	.text02 li:last-child {border:0px;}
+
+
+	.member_line {display:inline-block;width:100%;border-bottom:1px dashed #bcbcbc;padding:10px 0 5px 0;}
+	.memberImg {float:left;display:inline-block;;margin-right:30px;vertical-align:middle;}
+	.memberText {width:78%;;float:right;list-style:none;}
+	.member_line li {line-height:25px;padding-left:15px;vertical-align:top;}
+	.member_line li._title {color:#0579cd;font-weight:500;padding:5px 0 5px 15px;background:url(../images/sub/listBlt.png) no-repeat left center;; vertical-align:middle;;}
+	.name_title {font-size:15px;color:#29abf1;font-weight:bold;padding:5px 0;}
+
+	.textBox3 {display:inline-block;width:100%;}
+
+	.textBox4 {display:inline-block;width:100%;border:3px solid #f1f3f5;padding:20px;position:relative;}
+	.textBox4:before {content:"";width:100%;border-top:3px solid #1fbcbe;border-left:3px solid #1fbcbe;position:absolute;top:-3px;left:-3px;height:30px;}
+	.textBox4:after {content:"";width:70%;border-top:3px solid #467ed4;border-right:3px solid #467ed4;position:absolute;top:-3px;right:-3px;height:30px;}
+
+	.listBox01 {display:inline-block;width:75%;float:right;list-style:none;}
+	.listBox01 li {background:url(../images/sub/listBlt.jpg) no-repeat left top 10px;padding-left:20px;}
+	.listBox01 li:nth-child(2) {border-bottom:1px dashed #d6d6d6;padding-bottom:10px;margin-bottom:10px;}
+
+	.listBox02 {display:inline-block;width:80%;list-style:none;color:#545454;}
+	.listBox02 li {background:url(../images/sub/listBlt.jpg) no-repeat left top 9px;padding-left:15px;}
+
+	.tablist {display:inline-block;margin:0px 0 10px;; }
+	.tablist li {display:inline-block;background:#e6e6e6;font-weight:500;}
+	.tablist li a {display:block;padding:0px 15px;color:#5c5c5c;}
+	.tablist li:hover, .tablist li._on {background:#0467af;}
+	.tablist li:hover a, .tablist li._on a {color:#fff;}
+
+	.pub_line {line-height:20px;border-top:1px solid #646464;border-bottom:1px dashed #bcbcbc;padding:5px 0;list-style:none;}
+	.pub_line li {padding:10px 0;;border-bottom:1px dotted #a9a9a9;vertical-align:top;}
+	.pub_line li span {color:#000; padding:0 10px 0 0;}
+	.pub_line li:last-child {border:0px;}
+	.pub_line li.line-titile {font-size:17px;color:#000;border-bottom:3px double #000;margin:10px 0;}
+	.pub_line p.number {display: inline-block;margin-right: 5px;vertical-align: top;font-weight:bold;}
+	.pub_line .pub_content {display: inline-block;width: 93%;vertical-align: top;}
+
+
+	.basicTable {vertical-align:top;}
+	.basicTable td, .basicTable th {vertical-align:top;padding:5px 5px;border-bottom:1px dashed #dedede;}
+
+	/*     Ʈ   */
+		h5 {font-size:14px;color:#3c3c3c;display:block;padding:10px 0px 0px 0px;}
+		.site_box {display:inline-block;width:183px;padding-bottom:40px;vertical-align:top;}
+		.site_box ul {padding:10px 0;line-height:20px;}
+		.site_box ul li {padding:8px 0 8px 0px;color:#9d9d9d;border-bottom:1px solid #dedede;text-indent:40px;}
+
+		.text01 {font-size:12px;line-height:20px;color:#9d9d9d}
+		.text01 strong {color:#000;}
+
+		.text03 {line-height:20px;border-top:3px solid #646464;border-bottom:1px solid #bcbcbc;padding:0px 0;}
+		.text03 li {padding:5px 0 5px 15px;border-bottom:1px dotted #a9a9a9;background:url(https://human.kaist.ac.kr/layouts/jit_layouts/images/sub01/text_blt01.png) no-repeat 5px 15%; vertical-align:top;}
+		.text03 li strong {color:#000;font-weight:bold;}
+		.text03 li:last-child {border:0px;}
+
+		.text04 {line-height:20px;border-top:1px solid #bcbcbc;padding:0 0 5px 0;}
+		.text04 li {padding:3px 0 3px 15px;background:url(https://human.kaist.ac.kr/layouts/jit_layouts/images/sub01/text_blt01.png) no-repeat 5px 45%; vertical-align:top;}
+		.text04 li strong {color:#000;font-weight:bold;}
+
+	.search_box {display:inline-block;float:right;width:100%;text-align:right;padding:10px;}
+	.search_box li {display:inline-block;text-align:right;vertical-align:middle;line-height:0px;}
+	.search_box li select {height:30px;border:1px solid #bfbfbf;vertical-align:middle;line-height:0px;}
+	.search_box li input {height:30px;border:1px solid #bfbfbf;vertical-align:middle;padding:0 1px;line-height:0px;}
+
+	.tab-submenu{position:relative;margin-bottom:25px;list-style:none;}
+	.tab-submenu:after{content:"";display:block;clear:both;}
+	.tab-submenu li{float:left;margin-right:5px;list-style:none;}
+	.tab-submenu li a{display:block;padding:5px 10px;border:1px solid #0579cd;font-size:13px;color:#646464;}
+	.tab-submenu li a:hover, .tab-submenu li a._on{color:#fff;background:#0579cd;}
+
+	.link-list{position:relative;padding:10px;border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+	.link-list:first-of-type{border-top:1px solid #ddd;}
+	.link-list:after{content:"";display:block;clear:both;}
+	.link-list dt{overflow:hidden;float:left;width:130px;height:100px;}
+	.link-list dt img{margin:0 auto;}
+	.link-list dd{float:left;width:565px;padding-left:30px;}
+	.link-list dd strong{font-size:15px;}
+	.link-list dd span{font-size:12px;}
+
+.memberText li {
+    list-style: none;
+}
